@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Timur Khakkiev</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+			:root {
+				--blue: #4facf7;
+				--red: #ff3e00;
+				--prime: var(--blue);
+			}
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+					Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+				font-size: calc(10px + 0.33vw);
+				-webkit-font-smoothing: antialiased;
+				color: #121314;
+				font-size: 100%;
+				position: relative;
+				height: 100vh;
+			}
+			h1 {
+				font-size: 4.5em;
+				font-weight: 500;
+				margin-bottom: 30px;
+			}
+			p {
+				font-size: 1.6em;
+				font-weight: 300;
+				line-height: 1.5;
+				max-width: 28em;
+				margin-bottom: 30px;
+			}
+			a {
+				text-decoration: none;
+				color: var(--prime);
+				position: relative;
+				transition: bottom 200ms cubic-bezier(0, 0.8, 0.13, 1);
+			}
+			a:hover {
+				color: white;
+			}
+			main {
+				padding: 5vw 10vh;
+			}
+			a:after {
+				content: '';
+				position: absolute;
+				z-index: -1;
+				top: 90%;
+				left: -0.1em;
+				right: -0.1em;
+				bottom: 0;
+				transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
+				background-color: var(--prime);
+				z-index: -1;
+				opacity: 0.5;
+				border-radius: 3px;
+			}
+			a:hover:after {
+				top: 0%;
+				opacity: 1;
+			}
+			.copy-btn {
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;
+				background: var(--prime);
+				border: none;
+				height: 30px;
+				width: 30px;
+				padding: 3px;
+				border-radius: 5px;
+				cursor: pointer;
+				position: relative;
+				overflow: hidden;
+			}
+			.copy-icon,
+			.check-icon {
+				position: absolute;
+				fill: white;
+				width: 24px;
+				height: 24px;
+				transition: 0.2s ease-in-out;
+			}
+			.check-icon {
+				transform: translateY(100%);
+				background-color: var(--prime);
+			}
+			.check-icon.active {
+				transform: translateY(0);
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<h1 lang="ru">Привет.</h1>
+			<p style="font-weight: 500; font-size: 2.2em">Меня зовут Тимур Хаккиев.</p>
+			<p>
+				Я JavaScript-разработчик и верстальщик. Все мои работы присутствуют на моем
+				<a class="link" href="https://github.com/TimKhakk" target="_blank">GitHub</a>. Вот мои
+				последние работы
+				<a class="link" href="https://nero-tech-landing.netlify.app/" target="_blank"
+					>NeroTech</a
+				>,
+				<a class="link" href="https://mitravel-landing.netlify.app/" target="_blank"
+					>Mitravel</a
+				>,
+				<a class="link" href="https://hungry-people-landing.netlify.app/" target="_blank"
+					>Hungry People</a
+				>. Имею опыт работы с такими технологиями как <span class="react">React</span>,
+				<span class="svelte">Svelte</span>. Со мной можно связаться по почте
+				<a class="mail" href="mailto:khakkievtimur@yandex.ru">khakkievtimur@yandex.ru</a>, по
+				<a href="https://t.me/Khakkiev" target="_blank">Telegram</a>
+				или по
+				<a href="https://www.linkedin.com/in/timur-khakkiev-a50935221/" target="_blank"
+					>LinkedIn</a
+				>.
+			</p>
+		</main>
+	</body>
+</html>
